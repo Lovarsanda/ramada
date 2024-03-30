@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرحبًا بك في موقع ذكاء اصطناعي</title>
+  <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* تخصيص الألوان والتصميم */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa; /* لون خلفية الصفحة */
+            color: #333;
+        }
+
+        .header {
+            background-color: #343a40; /* لون خلفية الهيدر */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            background-color: #495057; /* لون خلفية الروابط في النافبار */
+        }
+
+        .navbar ul li a:hover {
+            background-color: #6c757d; /* لون خلفية الروابط عند التحويم */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .tool, .resource {
+            background-color: #fff; /* لون خلفية الأدوات والموارد */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .tool h3, .resource h3 {
+            color: #343a40; /* لون العنوان */
+        }
+
+        .tool p, .resource p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .tool button, .resource button {
+            background-color: #007bff; /* لون خلفية الأزرار */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .tool button:hover, .resource button:hover {
+            background-color: #0056b3; /* لون خلفية الأزرار عند التحويم */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>مرحبًا بك في موقع ذكاء اصطناعي</h1>
+            <nav>
+                <ul>
+                    <li><a href="#tools">الأدوات البرمجية</a></li>
+                    <li><a href="#resources">الموارد التعليمية</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+<div class="header-icons">
+    <div class="icon">
+        <a href="login.html">تسجيل الدخول</a>
+    </div>
+    <div class="icon">
+        <a href="#">بحث</a>
+        <input type="text" placeholder="ابحث هنا">
+    </div>
+    <div class="icon">
+        <a href="#">الدولة</a>
+        <select>
+            <option value="sa">السعودية</option>
+            <option value="eg">مصر</option>
+            <option value="ae">الإمارات</option>
+            <!-- إضافة المزيد من الخيارات حسب الحاجة -->
+        </select>
+    </header>
+
+    <main>
+
+ <div class="description-container">
+        <div class="description">
+            
+            <p>
+                مرحبًا بك في موقعنا الرائع، حيث تجتمع التكنولوجيا والتعليم في تجربة ممتعة ومثيرة! يعتبر موقعنا وجهة مثالية لكل من يسعى لتحسين مهاراته ومعرفته في مجالات الذكاء الاصطناعي والتكنولوجيا.
+            </p>
+            <p>
+                هنا، يمكن للمستخدمين الاستمتاع بمشاهدة مجموعة متنوعة من الإعلانات المثيرة، حيث يمكنهم جمع النقاط بسهولة وسرعة. وما الهدف من جمع النقاط؟ ببساطة، يمكن استخدام هذه النقاط لشراء الأدوات البرمجية المميزة التي تساعد في تطوير المهارات والمشاريع الشخصية.
+            </p>
+            <p>
+                ولكن هذا ليس كل شيء، فموقعنا يقدم أيضًا مجموعة من الدورات التعليمية عبر الإنترنت، حيث يمكن للمستخدمين اكتساب المعرفة والخبرة في مجالات مثل الذكاء الاصطناعي والتحليل البرمجي، وذلك من خلال الاشتراك في الدورات المناسبة لاحتياجاتهم واهتماماتهم.
+            </p>
+        </div>
+    </div>
+<div class="video-container">
+    <video controls id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="advertisement">
+        <!-- إعلان 1 -->
+        <span class="dot"></span><span class="dot"></span>
+    </div>
+    <div class="controls">
+        <button onclick="playPause()">تشغيل/إيقاف</button>
+        <button onclick="nextAd()">التالي</button>
+    </div>
+</div>
+
+        <section id="tools">
+    <div class="container">
+        <h2>الأدوات البرمجية</h2>
+        <div class="tool">
+            <h3>galoot</h3>
+            <p>"Galoot" هي أداة تعتمد على التعرف الذكي للأشياء والأجسام، وتتميز بالقدرة على تذكر أسماء الأشياء بجانب تحديد ألوانها</p>
+            <p>السعر: 50 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+        <div class="tool">
+            <h3>ajnaden</h3>
+            <p>ajnaden هي أداة تعرف على الوجوه تستخدم لتحليل وتعريف الوجوه بشكل دقيق. تتميز هذه الأداة بالقدرة على التعرف على معالم الوجه ومقارنتها مع البيانات المخزنة لتحديد الهوية بدقة.</p>
+            <p>السعر: 60 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+        <div class="tool">
+            <h3>أداة 3</h3>
+            <p>وصف الأداة 3 وميزاتها البارزة.</p>
+            <p>السعر: 70 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+        <div class="tool">
+            <h3>أداة 4</h3>
+            <p>وصف الأداة 4 وفوائدها الرئيسية.</p>
+            <p>السعر: 80 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+        <div class="tool">
+            <h3>أداة 5</h3>
+            <p>وصف الأداة 5 واستخداماتها المتعددة.</p>
+            <p>السعر: 90 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+        <div class="tool">
+            <h3>أداة 6</h3>
+            <p>وصف الأداة 6 وكيفية الاستفادة منها.</p>
+            <p>السعر: 100 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+        <div class="tool">
+            <h3>أداة 7</h3>
+            <p>وصف الأداة 7 وفوائدها الفريدة.</p>
+            <p>السعر: 110 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+        <div class="tool">
+            <h3>أداة 8</h3>
+            <p>وصف الأداة 8 وكيفية الاستفادة منها بشكل كامل.</p>
+            <p>السعر: 120 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+        <div class="tool">
+            <h3>أداة 9</h3>
+            <p>وصف الأداة 9 ومميزاتها الرائعة.</p>
+            <p>السعر: 130 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+        <div class="tool">
+            <h3>أداة 10</h3>
+            <p>وصف الأداة 10 وفوائدها المتعددة.</p>
+            <p>السعر: 140 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="tool">
+            <h3>أداة 10</h3>
+            <p>وصف الأداة 10 وفوائدها المتعددة.</p>
+            <p>السعر: 140 نقطة</p>
+            <button class="purchase-button">شراء</button>
+            <button class="like-button">إعجاب</button>
+            <button class="share-button">مشاركة</button>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="resource">
+            <h3>مقالة عن الذكاء الاصطناعي</h3>
+            <p>يعتبر الذكاء الاصطناعي واحدًا من أكثر المجالات تفجرًا في العلوم الحديثة، حيث تُقدَّم تقنياته القابلة للتطبيق في مجموعة متنوعة من المجالات، بما في ذلك التجارة والصناعة والطب والتعليم وغيرها. يهدف الذكاء الاصطناعي إلى تصميم أنظمة ذكية قادرة على محاكاة القدرات العقلية البشرية، وتنفيذ المهام بكفاءة ودقة عالية.</p>
+            <p>التكلفة: مجانية</p>
+            <div class="buttons">
+                <button class="share-button">مشاركة</button>
+                <button class="like-button">إعجاب</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var likeButtons = document.querySelectorAll('.like-button');
+
+        likeButtons.forEach(function(likeButton) {
+            likeButton.addEventListener('click', function() {
+                var isLoggedIn = false; // افتراضيًا المستخدم غير مسجل الدخول
+                // تحقق مما إذا كان المستخدم مسجل دخوله أم لا (يجب استبدال هذا بالتحقق الفعلي)
+                // في هذا المثال، قمت بتعيينه إلى قيمة ثابتة (false)
+                
+                if (isLoggedIn) { // إذا كان المستخدم مسجل الدخول
+                    // قم بتغيير لون الزر إلى الأحمر
+                    likeButton.classList.add('liked');
+                    alert('تم تسجيل إعجابك!');
+                } else { // إذا لم يكن المستخدم مسجل الدخول
+                    // اطلب من المستخدم تسجيل الدخول
+                    var username = prompt('الرجاء إدخال اسمك:');
+                    if (username) {
+                        // افتراضيًا، بمجرد التأكد من أن المستخدم قام بإدخال اسم
+                        // يمكننا اعتباره مسجل دخوله، لذلك سنقوم بتغيير لون الزر وتسجيل الإعجاب
+                        likeButton.classList.add('liked');
+                        alert('تم تسجيل إعجابك!');
+                    }
+                }
+            });
+        });
+    });
+</script>
+        <div class="resource">
+    <h3>دورة تعليمية عبر الإنترنت</h3>
+    <p>يمكنك الآن الاشتراك في هذه الدورة التعليمية عبر الإنترنت لتعلم أساسيات الذكاء الاصطناعي وتطبيقاته العملية. ستقدم لك هذه الدورة فهمًا شاملاً للمفاهيم الأساسية للذكاء الاصطناعي، بالإضافة إلى توجيهات عملية حول كيفية تطبيق هذه المفاهيم في المشاريع الحقيقية.</p>
+    <p>التكلفة: Z نقاط</p>
+    <p>للتسجيل في الدورة، يرجى النقر على الرابط التالي: <a href="رابط الدورة">الاشتراك الآن</a></p>
+    <div class="buttons">
+        <button class="subscribe-button">الاشتراك</button>
+        <button class="share-button">مشاركة</button>
+        <button class="like-button">إعجاب</button>
+    </div>
+</div>
+
+        
+     <div class="resource">
+    <h3>ورشة عمل عن تطبيقات الذكاء الاصطناعي في الصناعة</h3>
+<p>التكلفة: Z نقاط</p>
+    <p>للتسجيل في الورشة، يرجى النقر على الرابط التالي: <a href="رابط الدورة">الاشتراك الآن</a></p>
+
+    
+    <div class="buttons">
+        
+        <button class="like-button">مشاركة</button>
+<button class="like-button">إعجاب</button>
+    </div>
+</div>
+
+
+        <div class="resource">
+            <h3>كتاب إلكتروني عن تاريخ الذكاء الاصطناعي</h3>
+            <p>حمل هذا الكتاب الإلكتروني لاستكشاف تاريخ وتطور الذكاء الاصطناعي منذ بداياته حتى الوقت الحالي.</p>
+            
+          <p>التكلفة: مجانية</p>
+<button class="share-button">مشاركة</button>
+                <button class="like-button">إعجاب</button>
+        </div>
+        <div class="resource">
+            <h3>مدونة تقنية حول التطبيقات العملية للذكاء الاصطناعي</h3>
+            <p>اطلع على أحدث المقالات والمقاطع التعليمية حول كيفية تطبيق الذكاء الاصطناعي في مجالات متعددة.</p>
+            <p>التكلفة: مجانية</p>
+<button class="share-button">مشاركة</button>
+                <button class="like-button">إعجاب</button>
+        </div>
+</section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>اتصل بنا</h2>
+                <form id="contact-form" method="post">
+                    <div class="form-group">
+                        <label for="name">الاسم:</label><br>
+                        <input type="text" id="name" name="name" placeholder="أدخل اسمك هنا" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني:</label><br>
+                        <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني هنا" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">الرسالة:</label><br>
+                        <textarea id="message" name="message" placeholder="اكتب رسالتك هنا" required></textarea><br>
+                    </div>
+                    <button type="submit">إرسال</button>
+                </form>
+            </div>
+        </section>
+    </main>
+   </footer>
+    <script>
+        // إضافة السلوك التفاعلي لنموذج الاتصال
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // يمكنك إضافة السلوك المطلوب هنا، مثل إرسال البيانات إلى الخادم
+            console.log("تم إرسال النموذج بنجاح.");
+        });
+    </script>
+</body>
+</html>
